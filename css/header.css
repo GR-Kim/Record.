@@ -1,0 +1,22 @@
+.info__weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info__weather__icon{
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: rgb(226, 226, 226);
+}
+.info__weather__temp{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(226, 226, 226);
+}
+.info__location{
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+}

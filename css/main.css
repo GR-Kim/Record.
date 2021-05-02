@@ -1,0 +1,33 @@
+.clock{
+    font-size: 7rem;
+    font-weight: 700;
+    color:whitesmoke;
+    margin-bottom: 15px;
+}
+.name{
+    font-size: 3rem;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    border: none;
+    color:whitesmoke;
+}
+.name:focus{
+    color:whitesmoke;
+}
+.name::placeholder{
+    color:whitesmoke;
+    opacity: 80%;
+}
+.name:focus::placeholder{
+    color: transparent;
+}
+.greeting{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color:whitesmoke;
+    margin-bottom: 15px;
+}
+.none{
+    display: none;
+}

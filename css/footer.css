@@ -1,0 +1,66 @@
+.author{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author__github{
+    color: whitesmoke;
+    opacity: 80%;
+}
+.author__github:hover{
+    color: rgb(226, 226, 226);
+}
+.author__info{
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: rgb(226, 226, 226);
+}
+.promodo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.promodo__timer{
+    margin-bottom: .2rem;
+    color: rgb(226, 226, 226);
+    visibility: hidden;
+    font-weight: 500;
+    margin: 13px;
+}
+.pomodoro__outlie{
+    position:relative;
+    border: 3px solid whitesmoke;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding: 0.1rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.pomodoro__btn{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #FF0000;
+    cursor: pointer;
+    transition: all 1.5s cubic-bezier(.05,.58,.32,1.35);
+}
+.pomodoro__btn.clicked{
+    height: 60%;
+    width: 60%;
+    border-radius: 20%;
+    cursor: pointer;
+    background-color: #FF0000;
+    transition: all 1.5s cubic-bezier(.05,.58,.32,1.35);
+}
+.promodo__timer.show{
+    visibility: visible;
+    transition: visibility 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
