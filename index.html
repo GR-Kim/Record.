@@ -8,12 +8,16 @@
       src="https://kit.fontawesome.com/7752253787.js"
       crossorigin="anonymous"
     ></script>
+    <link href="Record-logo.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Record.</title>
+    <title>Record. | Record Your Day</title>
   </head>
   <body>
     <header>
-      <div class="countDown"></div>
+      <div class="date">
+        <h2 class="todayDate"></h2>
+        <h2 class="day"></h2>
+      </div>
       <div class="info">
         <div class="info__weather"></div>
         <h2 class="info__location"></h2>
@@ -22,21 +26,55 @@
     <main>
       <h1 class="clock">00:00:00</h1>
       <form class="usernameForm">
-        <input class="name" placeholder="What's your name?" />
+        <input class="nameInput" placeholder="What's your name?" />
       </form>
-      
     </main>
     <footer>
-      <div class="author">
-        <a class="author__github" href="https://github.com/GR-Kim/Record."
+        <a
+          class="author__github"
+          href="https://github.com/GR-Kim/Record."
+          target="_blank"
           ><i class="fab fa-github fa-2x"></i
-        ></a>
-        <span class="author__info">made by Grit</span>
-      </div>
-      <div class="promodo">
-        <h3 class="promodo__timer">Time over</h3>
-        <div class="pomodoro__outlie">
-            <div class="pomodoro__btn"></div>
+          ><h3 class="author__info">&copy; made by Grit</h3>
+        </a>
+      <div class="plan">
+        <div class="toDo">
+          <div class="toDo__box fadeOut">
+            <div class="toDo__top">
+              <div class="toDo__top__category">
+                <h2 class="category__text">ToDo</h2>
+                <i class="fas fa-caret-down"></i>
+                <ul class="category__text__list">
+                  <li class="category__text__list__item todo">ToDo</li>
+                  <li class="category__text__list__item done">Done</li>
+                </ul>
+              </div>
+              <div class="toDo__setting">
+                <i class="fas fa-ellipsis-h"></i>
+                <ul class="menu__list">
+                  <li class="menu__list__item">Remove All Todos</li>
+                  <li class="menu__list__item">Remove All Completed Todos</li>
+                  <li class="menu__list__item">Reset All Data</li>
+                </ul>
+              </div>
+            </div>
+            <div class="toDo__main">
+                <form class="toDo__form">
+                    <input
+                      class="toDo__form__input"
+                      placeholder="What are you going to do today?"
+                    />
+                  </form>
+            </div>
+            
+          </div>
+          <h2 class="toDo__text">TO DO</h2>
+        </div>
+        <div class="stopWatch">
+          <h3 class="stopWatch__current">00:00</h3>
+          <div class="stopWatch__outlie">
+            <div class="stopWatch__btn"></div>
+          </div>
         </div>
       </div>
     </footer>
@@ -44,6 +82,7 @@
     <script src="JS/location.js"></script>
     <script src="JS/greeting.js"></script>
     <script src="JS/clock.js"></script>
-    <script src="JS/promodo.js"></script>
-  </body>
+    <script src="JS/stopwatch.js"></script>
+    <script src="JS/toDo.js"></script>
+    <script src="JS/date.js"></script>
 </html>

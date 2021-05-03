@@ -4,15 +4,6 @@
 @import "main.css";
 @import "footer.css";
 
-@keyframes fadeIn {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -28,10 +19,8 @@ header {
     align-items: center;
     box-sizing: border-box;
     padding: 0.5rem 1rem;
-    border: 2px solid black;
 }
 main {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,9 +30,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
+    padding: 1rem 1rem;
+    padding-top: 0rem;
 }
 
 .background{
@@ -52,7 +40,20 @@ footer{
   animation: fadeIn 2s linear;
   top: 0;
   left: 0;
-  
+  height: 100%;
   width:100%;
-
+}
+.fadeIn{
+  animation: fadeIn .3s linear forwards;
+}
+.fadeOut{
+  animation: fadeOut .3s linear forwards;
+  
+}
+.none{
+  display:none;
+}
+.dropbox{
+  display: block;
+  animation: dropDown .6s cubic-bezier(.25,.46,.45,.94) both;
 }

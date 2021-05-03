@@ -4,7 +4,7 @@
     color:whitesmoke;
     margin-bottom: 15px;
 }
-.name{
+.nameInput{
     font-size: 3rem;
     outline: none;
     background: transparent;
@@ -12,21 +12,22 @@
     border: none;
     color:whitesmoke;
 }
-.name:focus{
+.nameInput:focus{
     color:whitesmoke;
 }
-.name::placeholder{
+.nameInput::placeholder{
     color:whitesmoke;
     opacity: 80%;
 }
-.name:focus::placeholder{
+.nameInput:focus::placeholder{
     color: transparent;
 }
 .greeting{
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2.3rem;
     color:whitesmoke;
     margin-bottom: 15px;
+    font-weight: 500;
+    animation: dropDown 1s cubic-bezier(.25,.46,.45,.94) both 1.5s;
 }
 .none{
     display: none;

@@ -1,66 +1,73 @@
-.author{
-    display: flex;
+@import "toDo.css";
+.author__github {
+  display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  color: whitesmoke;
+  opacity: 80%;
+  text-decoration: none;
+}
+.author__info {
+  font-family: "Patrick Hand", cursive;
+  margin-top: .5rem;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+.author__github:hover {
+  color: rgb(207, 207, 207);
+}
+.plan {
+  display: flex;
+  height: 100%;
+}
+.stopWatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.stopWatch__outlie {
+  position: relative;
+  border: 3px solid whitesmoke;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  padding: 0.1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-.author__github{
-    color: whitesmoke;
-    opacity: 80%;
+.stopWatch__btn {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  background-color: #ff0000;
+  cursor: pointer;
+  transition: all 1.5s cubic-bezier(0.05, 0.58, 0.32, 1.35);
 }
-.author__github:hover{
-    color: rgb(226, 226, 226);
+.stopWatch__btn.clicked {
+  height: 60%;
+  width: 60%;
+  border-radius: 20%;
+  cursor: pointer;
+  background-color: #ff0000;
+  transition: all 1.5s cubic-bezier(0.05, 0.58, 0.32, 1.35);
 }
-.author__info{
-    font-family: 'Patrick Hand', cursive;
-    margin-top: 0.2rem;
-    font-size: 1rem;
-    color: rgb(226, 226, 226);
+.stopWatch__current {
+  margin-bottom: 0.2rem;
+  color: rgb(226, 226, 226);
+  visibility: hidden;
+  font-weight: 500;
+  margin: 13px;
+  opacity: 0;
 }
-.promodo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-.promodo__timer{
-    margin-bottom: .2rem;
-    color: rgb(226, 226, 226);
-    visibility: hidden;
-    font-weight: 500;
-    margin: 13px;
-}
-.pomodoro__outlie{
-    position:relative;
-    border: 3px solid whitesmoke;
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    padding: 0.1rem;
-    margin-bottom: 0.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-.pomodoro__btn{
-    height: 90%;
-    width: 90%;
-    border-radius: 50%;
-    background-color: #FF0000;
-    cursor: pointer;
-    transition: all 1.5s cubic-bezier(.05,.58,.32,1.35);
-}
-.pomodoro__btn.clicked{
-    height: 60%;
-    width: 60%;
-    border-radius: 20%;
-    cursor: pointer;
-    background-color: #FF0000;
-    transition: all 1.5s cubic-bezier(.05,.58,.32,1.35);
-}
-.promodo__timer.show{
-    visibility: visible;
-    transition: visibility 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+.stopWatch__current.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
